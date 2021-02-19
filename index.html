@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>eShop</title>
+</head>
+
+<body>
+    <header class="header">
+        <div class="header__top">
+            <div class="header__topLink">
+                <a href="https://www.facebook.com" target="_blank" class="header__link">
+                    <i class="fab fa-facebook-f"></i></a>
+                <a href="https://vk.com" target="_blank" class="header__link">
+                    <i class="fab fa-vk"></i></a>
+                <a href="https://www.instagram.com" target="_blank" class="header__link">
+                    <i class="fab fa-instagram"></i></a>
+            </div>
+            <div class="header__topInput">
+                <input type="search" placeholder="Search" data-id="search" class="header__top_input">
+                <button class="search_button">
+                    <i class="fas fa-search"></i>
+                </button>
+            </div>
+        </div>
+        <div class="header__bottom">
+            <button id="btn" class="cart__button" type="button" onclick="openWin()">Корзина</button>
+        </div>
+    </header>
+    <main>
+        <div class="goods"></div>
+        <div class="cart"></div>
+    </main>
+    <footer class="footer">
+        <p class="footer__text">&#169; TOPILIN 2021</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>
