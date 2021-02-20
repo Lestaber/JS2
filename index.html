@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>RegEx</title>
+</head>
+
+<body>
+    <div class="text">
+        <div class="text__before">
+            'Дан большой текст, в котором для оформления 'прямой речи' используются одинарные кавычки'.<br>
+            'Придумать шаблон, который заменяет 'одинарные' кавычки на двойные'.<br>
+            'Улучшить 'шаблон' так, чтобы в 'конструкциях' типа aren't, isn't, doesn't, didn't, don't
+            одинарная кавычка не заменялась на двойную'.
+        </div>
+        <br>
+        <div class="buttons">
+            <button class="changeBtn" onclick="changeText()">CASE 1</button>
+            <button class="changeBtn" onclick="changeText2()">CASE 2</button>
+            <button class="resetBtn" onclick="resetText()" type="reset" value="Отмена" name="Reset">RESET</button>
+        </div>
+        <div class="text__after"></div>
+    </div>
+    <section>
+        <h1 style="text-align: center"> Форма обратной связи </h1>
+        <form name="regform" onsubmit="return formValidation(event)">
+            <h2 class="error-main" id="form-box__area__headline"></h2>
+            <span class="error-text form-box__area"></span>
+            <div class="form__block">Имя:
+                <input type="text" size=65 name="name" class="form-box__area">
+            </div>
+            <span class="error-text form-box__area"></span>
+            <div class="form__block">E-mail:
+                <input type="text" size=65 name="email" class="form-box__area">
+            </div>
+            <span class="error-text form-box__area"></span>
+            <div class="form__block">Телефон:
+                <input type="text" size=65 name="telephone" onclick="this.value='+7'" value="+7(000)000-0000"
+                    class="form-box__area">
+            </div>
+            <div class="form__block"> Комментарий:
+                <textarea cols="55" name="comment" class="form-box__area"> </textarea>
+            </div>
+            <div>
+                <input type="submit" value="Отправить" name="submitButton">
+                <input onclick="clearErrorText()" type="reset" value="Отмена" name="Reset">
+            </div>
+        </form>
+    </section>
+
+    <script src="script.js"></script>
+    <!-- <script src="form.js"></script> -->
+</body>
+
+</html>
