@@ -1,0 +1,22 @@
+[
+    {
+        "productName": "IPhone 12 PRO",
+        "price": "530.00$",
+        "id": "9292a283-8da3-4579-b84c-d114245924b3"
+    },
+    {
+        "productName": "PS 5",
+        "price": "380.00$",
+        "id": "1eaef24e-bc9e-4d04-a051-5c41d1b57c89"
+    },
+    {
+        "productName": "XBox One",
+        "price": "275.00$",
+        "id": "1d83e584-966e-4b8c-a28e-c7d75b5ea126"
+    },
+    {
+        "productName": "AirPods",
+        "price": "310.00$",
+        "id": "8e7e9bc6-f6a1-4535-bdab-6298876c7fbd"
+    }
+]
